@@ -41,7 +41,7 @@ all_files = sorted(os.listdir(velodyne_path))
 
 # Split the filenames into training and testing sets
 
-# For 80-20 split. We will follow this split because 50/50 then the training dataset will be very small 
+# For 80-20 split. We will follow this split because if we follow (Kitti-Like) 50/50 split then the training dataset will be very small 
 # and the model might not generlize well with these small dataset
 train_files, test_files = train_test_split(all_files, test_size=0.2, random_state=42)
 
